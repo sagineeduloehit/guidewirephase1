@@ -1,7 +1,7 @@
-# 🛡 GigGuard — AI-Powered Parametric Income Insurance for E-Commerce Delivery Partners
+# 🛡 SwiggyShield — AI-Powered Parametric Income Insurance for Swiggy Delivery Partners
 
 > Guidewire DEVTrails 2026 | Phase 1 — Ideation & Foundation  
-> Persona: E-Commerce Delivery Partners (Amazon / Flipkart)
+> Persona: Swiggy Food Delivery Partners
 
 ---
 
@@ -24,34 +24,29 @@
 
 ## 🧩 The Problem
 
-India's e-commerce delivery ecosystem — powered by Amazon Flex, Flipkart Ekart, and similar platforms — relies on millions of gig workers earning per delivery.
+Swiggy delivery partners are the backbone of India’s food delivery ecosystem, earning on a per-order basis.
 
-These workers face a **critical financial vulnerability**:
+However, they face **unpredictable income loss** due to:
+- Heavy rainfall / floods  
+- Extreme heat  
+- Air pollution  
+- Curfews or local restrictions  
 
-- External disruptions (weather, curfew, pollution)  
-- No employer protection  
-- No income fallback  
-
-Even **2–3 lost days = 30–40% income loss**, with **zero compensation**.
-
-👉 GigGuard solves this.
+👉 Even **1–2 lost days = ₹1000–₹2000 loss**, with **no compensation**.
 
 ---
 
 ## 💡 Our Solution
 
-GigGuard is an **AI-powered parametric income insurance platform** designed for gig delivery workers.
+**SwiggyShield** is an AI-powered parametric insurance platform that:
 
-### Key Capabilities
+- Detects real-world disruptions automatically  
+- Triggers payouts instantly (no claims needed)  
+- Uses weekly subscription pricing  
+- Applies AI-driven fraud detection  
+- Ensures fair payouts for genuine workers  
 
-- ✅ Automated coverage for income loss  
-- ✅ Zero-touch claims (no manual filing)  
-- ✅ Weekly subscription model  
-- ✅ AI-driven dynamic pricing  
-- ✅ Multi-layer fraud detection  
-- ✅ Instant payouts (UPI-enabled)  
-
-> ⚠️ Scope: Covers **income loss only** — not health, vehicle, or accident claims.
+> ⚠️ Coverage: Only **income loss**, not health or vehicle damages.
 
 ---
 
@@ -61,87 +56,67 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 | Attribute | Details |
 |----------|--------|
-| Worker Type | Amazon Flex / Flipkart Ekart |
-| Earnings | ₹4,200 – ₹7,000/week |
-| Work Pattern | 6–10 hrs/day |
-| Risk | Lost work hours due to disruptions |
+| Worker | Swiggy Delivery Partner |
+| Earnings | ₹500–₹1200/day |
+| Work Pattern | Daily shift-based |
+| Dependency | Fully on active delivery hours |
 
 ---
 
-### 🌧 Scenario 1 — Extreme Rainfall
+### 🌧 Scenario 1 — Heavy Rain
 
-- 120mm rainfall → deliveries halted  
-- Worker loses ₹800/day  
+- Orders drop drastically  
+- Roads flooded  
 
-✅ GigGuard:
-- Detects IMD alert  
-- Auto triggers payout  
-- ₹680 credited within 2 hours  
-
----
-
-### 🚫 Scenario 2 — Curfew
-
-- Section 144 imposed  
-- Worker cannot operate  
-
-✅ GigGuard:
-- Detects government alert  
-- Pays 80% of daily income  
+✅ SwiggyShield:
+- Detects rainfall > threshold  
+- Auto payout triggered  
+- ₹500 credited instantly  
 
 ---
 
-### 🔥 Scenario 3 — Heatwave
+### 🔥 Scenario 2 — Heatwave
 
-- Temperature ≥ 47°C  
-- Shift cancelled  
+- Temperature > 45°C  
+- Workers stop mid-day  
 
-✅ GigGuard:
-- Detects heat threshold  
-- Pays proportional loss  
+✅ SwiggyShield:
+- Detects heat alert  
+- Pays partial shift loss  
 
 ---
 
-## 🔄 Application Workflow
+### 🚫 Scenario 3 — Curfew
 
-### Flow Steps
+- Zone shutdown  
+- No deliveries allowed  
 
-1. **Onboarding**
-   - Aadhaar + PAN (KYC)
-   - Select zone
+✅ SwiggyShield:
+- Detects curfew  
+- Pays 80% income  
 
-2. **Risk Profiling**
-   - AI assigns risk score
+---
+### Flow
 
-3. **Policy Activation**
-   - Weekly premium via UPI
-
-4. **Monitoring**
-   - APIs check disruptions every 15 mins
-
-5. **Claim**
-   - Auto-trigger (no user action)
-
-6. **Payout**
-   - Instant UPI transfer
+1. User registers (KYC optional mock)  
+2. AI calculates risk score  
+3. Weekly plan selected  
+4. System monitors disruptions  
+5. Trigger fires automatically  
+6. Fraud check runs  
+7. Payout via UPI  
 
 ---
 
 ## 💰 Weekly Premium Model
 
-### Why Weekly?
-- Workers earn weekly  
-- Matches real cash flow  
-
----
-
 ### 📊 Plans
 
 | Plan | Premium | Coverage |
 |------|--------|----------|
-| Basic | ₹49 | ₹700 |
-| Standard | ₹79 | ₹1400 |
-| Full | ₹109 | ₹2800 |
+| Basic | ₹29 | ₹500 |
+| Standard | ₹59 | ₹1000 |
+| Premium | ₹99 | ₹2000 |
 
 ---
 
@@ -151,9 +126,9 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ### 💸 Payout Logic
 
-| Severity | Payout |
+| Condition | Payout |
 |----------|--------|
-| Full | 100% |
+| Full disruption | 100% |
 | Partial | 60% |
 | Minor | 30% |
 
@@ -161,46 +136,37 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ## ⚡ Parametric Triggers
 
-| Trigger | Source | Condition |
-|--------|--------|----------|
-| Rainfall | IMD | ≥ 64.5mm |
-| Heatwave | IMD | ≥ 45°C |
-| AQI | CPCB | ≥ 401 |
-| Flood | Municipal | Alert |
-| Curfew | Govt/News | Verified |
+| Trigger | Condition |
+|--------|----------|
+| Rain | > 50mm |
+| Heat | > 45°C |
+| AQI | > 300 |
+| Flood | Alert issued |
+| Curfew | Govt order |
 
-👉 Trigger based on **pincode cluster (NOT GPS)**
+👉 Trigger based on **area (pincode), NOT user GPS**
 
 ---
 
 ## 🌐 Platform Choice (PWA)
 
-### Why PWA?
-
-- No install required  
-- Works on low-end phones  
-- Share via WhatsApp  
-- Faster deployment  
+- Works on all phones  
+- No app install  
+- Easy sharing via WhatsApp  
+- Faster updates  
 
 ---
 
-## 🤖 AI/ML Integration Plan
+## 🤖 AI/ML Integration
 
-### 1. Risk Scoring
-- Model: XGBoost  
-- Output: Risk Score (0–100)
+### 1. Risk Model
+- Predicts zone risk  
 
----
+### 2. Dynamic Pricing
+- Adjusts premium weekly  
 
-### 2. Fraud Detection
-- Model: Isolation Forest  
-- Detects anomalies using multi-signal data  
-
----
-
-### 3. Forecasting
-- Model: Prophet  
-- Predicts future claims  
+### 3. Fraud Detection
+- Detect spoofing & anomalies  
 
 ---
 
@@ -208,10 +174,10 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 | Layer | Tech |
 |------|-----|
-| Frontend | React + Tailwind |
-| Backend | FastAPI |
+| Frontend | React |
+| Backend | Spring Boot / FastAPI |
+| ML | Python |
 | DB | PostgreSQL |
-| ML | scikit-learn, XGBoost |
 | APIs | Weather, AQI |
 | Payments | Razorpay |
 
@@ -219,26 +185,20 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ## 🚀 Development Plan
 
-### Phase 1 ✅
-- Problem research  
+### Phase 1
+- Idea + README  
 - Pricing model  
-- Triggers  
-- README  
-- Anti-fraud strategy  
-
----
+- Trigger logic  
+- Anti-fraud design  
 
 ### Phase 2
-- Backend APIs  
-- ML model  
-- UI dashboard  
-
----
+- Backend + UI  
+- API integration  
 
 ### Phase 3
-- Fraud detection system  
-- Predictive analytics  
-- Full demo  
+- Fraud ML  
+- Dashboard  
+- Demo  
 
 ---
 
@@ -246,35 +206,33 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ## 🚨 Problem
 
-500+ workers spoof GPS → fake claims → drain system.
-
-👉 Solution: **Multi-Signal Trust Engine**
+Workers fake GPS to claim payouts → system loss.
 
 ---
 
-## 🎯 1. Real vs Fake Detection
+## 🎯 Solution: Multi-Signal Trust Engine
 
 ### Real Worker
 - Active before disruption  
-- Stops working naturally  
-- Sensor + network consistent  
+- Stops naturally  
+- Consistent behavior  
 
 ### Fraud Worker
 - No activity  
-- Fake GPS jumps  
-- Home WiFi + no movement  
+- Fake location  
+- Static device  
 
 ---
 
-## 📡 2. Multi-Signal Data
+## 📡 Detection Signals
 
-| Signal | Fraud Indicator |
-|-------|----------------|
-| GPS | Perfect/static |
+| Signal | Fraud Pattern |
+|-------|-------------|
+| GPS | Unreal movement |
 | Network | Home WiFi |
 | Motion | No movement |
-| Activity | No delivery logs |
-| Cluster | Sudden spike |
+| Activity | No deliveries |
+| Cluster | Mass claims |
 
 ---
 
@@ -284,38 +242,30 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ## 🔗 Fraud Ring Detection
 
-- Same IP  
-- Same device  
+- Same IP / device  
 - Same time claims  
-- Cluster spike  
-
-👉 Uses **graph + anomaly detection**
+- Location clustering  
 
 ---
 
-## ⚖️ 3. Fair UX
+## ⚖️ Fair UX
 
 | Level | Action |
 |------|--------|
 | Green | Instant payout |
-| Yellow | Delayed check |
-| Red | Manual review |
+| Yellow | Delay |
+| Red | Review |
 
 ---
 
-### 🟡 Grace Handling
-- Network failure allowed  
-- Delayed claim allowed  
+### 🔁 Worker Protection
+- No instant rejection  
+- Grace for network issues  
+- Appeal option  
 
 ---
 
-### 🔁 Appeal System
-- User can re-submit  
-- Manual review available  
-
----
-
-## 🧱 Final Defense
+## 🧱 Defense Layers
 
 1. Signal Layer  
 2. Behavior Layer  
@@ -325,31 +275,26 @@ GigGuard is an **AI-powered parametric income insurance platform** designed for 
 
 ---
 
-## 🔥 Key Strength
-
-- Not GPS dependent  
-- Detects fraud rings  
-- Protects genuine workers  
-
----
-
 ## 🔮 What's Next
 
 - Real API integration  
-- Advanced fraud ML  
-- Dashboard analytics  
-- Nationwide scaling  
+- Advanced fraud models  
+- Live dashboards  
 
 ---
 
 ## 📎 Conclusion
 
-GigGuard builds a **financial safety net** for gig workers using:
-- AI  
-- Parametric insurance  
-- Real-time automation  
+SwiggyShield provides:
+- Income protection  
+- AI-based automation  
+- Fraud-resistant system  
+
+👉 Making gig work safer and more reliable.
 
 ---
 
-**Team: DevStorm
+Team: DevStorm
 Guidewire DEVTrails 2026 🚀
+
+## 🔄 Application Workflow
