@@ -322,6 +322,8 @@ Trust Score = Behavior + Device Signals + Network + Historical Patterns
 
 SwiggyShield provides a reliable income protection system for delivery partners by combining parametric insurance with AI-driven automation and fraud detection, ensuring fairness and financial stability.
 
+#Youtube prototype video link - https://youtu.be/TdztAz-UdFg
+
 Team: DevStorm
 Guidewire DEVTrails 2026 🚀
 
